@@ -69,7 +69,7 @@ $.fn.cropit = function(method) {
     return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
   }
   else if (['imageState', 'imageSrc', 'offset', 'previewSize', 'imageSize', 'zoom',
-            'initialZoom', 'exportZoom', 'minZoom', 'maxZoom'].indexOf(method) >= 0) {
+            'initialZoom', 'exportZoom', 'minZoom', 'maxZoom', 'rotation'].indexOf(method) >= 0) {
     return prop(this, ...arguments);
   }
   else if (['rotateCW', 'rotateCCW', 'disable', 'reenable'].indexOf(method) >= 0) {
